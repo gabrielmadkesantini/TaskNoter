@@ -1,0 +1,136 @@
+@import './base.css'  ;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Força o tema light do PrimeVue, ignorando o tema do sistema */
+:root {
+  color-scheme: light;
+}
+
+/* Garante que o tema dark não seja aplicado automaticamente */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: light;
+  }
+}
+
+
+#app {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+/* Estilos globais para InputText do PrimeVue */
+.p-inputtext {
+  background-color: rgb(245, 243, 243) !important;
+  color: black !important;
+  border-radius: 0.375rem !important;
+  min-width: 400px !important;
+  border: 1px solid rgb(190, 190, 190) !important;
+}
+
+.p-inputtext:focus-visible {
+  background-color: rgb(245, 243, 243) !important;
+  color: black !important;
+  border-radius: 0.375rem !important;
+}
+
+/* Estilos globais para Dialog do PrimeVue */
+.p-dialog {
+  background-color: white !important;
+  color: black !important;
+  border-radius: 0.375rem !important;
+  border:none;
+  width: auto !important;
+}
+
+.p-floatlabel label{
+  background-color: white !important;
+  color: rgb(190, 190, 190) !important;
+}
+
+.p-datepicker input::placeholder{
+  color: rgb(190, 190, 190) !important;
+  font-size: 0.875rem !important;
+}
+
+.p-floatlabel .p-inputtext{
+  background-color: white !important;
+}
+
+.p-floatlabel .p-inputtext:focus-visible{
+  background-color: white !important;
+}
+/* Estilos globais para ToggleSwitch do PrimeVue */
+.p-toggleswitch.p-toggleswitch-checked {
+  --p-toggleswitch-checked-background: #000000 !important; /* branco */
+  --p-toggleswitch-checked-border-color: #e5e7eb !important;
+}
+
+.p-datepicker input {
+  background-color: white !important;
+}
+
+.p-datepicker .p-datepicker-container{
+  background-color: white !important;
+}
+
+
+.p-floatlabel .p-datepicker{
+  background-color: white !important;
+}
+.p-floatlabel .p-datepicker:focus-visible{
+  background-color: white !important;
+}
+.p-floatlabel .p-datepicker:focus-visible{
+  background-color: white !important;
+}
+.p-floatlabel .p-datepicker:focus-visible{
+  background-color: white !important;
+}
+.p-toggleswitch.p-toggleswitch-checked .p-toggleswitch-slider {
+  background-color: #2563eb !important; /* branco */
+  border-color: #e5e7eb !important;
+}
+
+.p-toggleswitch.p-toggleswitch-checked:hover .p-toggleswitch-slider,
+.p-toggleswitch.p-toggleswitch-checked:not(:disabled):hover .p-toggleswitch-slider {
+  background-color: #96b1ec !important; /* cinza muito claro no hover */
+  border-color: #d1d5db !important;
+}
+
+.p-toggleswitch.p-toggleswitch-checked .p-toggleswitch-handle {
+  --p-toggleswitch-handle-background: #2563eb; /* azul no handle quando marcado */
+}
+
+.p-toggleswitch.p-toggleswitch-unchecked .p-toggleswitch-handle {
+  --p-toggleswitch-handle-background: #e40000;
+}
+
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  #app {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+}
