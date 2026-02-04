@@ -320,3 +320,5 @@ A aplicação se comunica com a API backend através de requisições HTTP:
 - `DELETE /delete` - Deletar tarefa
 
 Certifique-se de que a API backend está rodando antes de iniciar a aplicação frontend.
+
+--Made by ChatGPT
