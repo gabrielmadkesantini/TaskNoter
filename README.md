@@ -70,6 +70,12 @@ dotnet restore
 ```
 
 Este comando baixa todas as dependências NuGet necessárias para o projeto.
+OBS: Porem, se isso não instalar o Entity Framework, executar:
+```bash
+dotnet tool install --global dotnet-ef
+```
+
+
 
 ### 2. Executar as Migrations
 
